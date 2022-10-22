@@ -9,4 +9,4 @@ nfs
 172.31.90.179 ansible_user="ec2-user" 
 
 [lb]
-172.31.90.179 ansible_user="ubuntu"
+172.31.90.11 ansible_user="ubuntu"
