@@ -1,4 +1,4 @@
-nfs
+[nfs]
 172.31.23.69 ansible_user="ec2-user"
 
 [webservers]
