@@ -498,6 +498,8 @@ Your Ansible architecture now looks like this:
 
 - Create a new folder, name it dynamic-assignments. Then inside this folder, create a new file and name it env-vars.yml. We will instruct site.yml to include this playbook later. For now, let us keep building up the structure.
 
+![created a new branch](./images/created%20a%20new%20branch.jpg)
+
 - Your GitHub shall have following structure by now.
 
 ---
@@ -605,7 +607,7 @@ site.yml should now look like this.
 
 -  hosts: webservers
 - name: Webserver assignment
-  import_playbook: ../static-assignments/webservers.yml
+  import_playbook: ../static-assignments/uat-webservers.yml
 ```
 
 ## Community Roles
@@ -630,7 +632,7 @@ git switch roles-feature
 
 - Inside roles directory create your new MySQL role with `ansible-galaxy install geerlingguy.mysql` and rename the folder to mysql
 
-`mv geerlingguy.mysql/ mysql`
+`mv /home/samsonajulor/.ansible/roles/geerlingguy.mysql/ /home/samsonajulor/.ansible/roles/mysql`
 
 - Read README.md file, and edit roles configuration to use correct credentials for MySQL required for the tooling website.
 Now it is time to upload the changes into your GitHub:
